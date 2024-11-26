@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yoh.css">
+    <script src="yoh.js"></script>
+    <title>yoh</title>
+</head>
+
+    <style>
+        h1{
+            width: 50%;
+        }
+    </style>
+
+
+
+    
+<body class="fade-in">
+    <h1>yohJS in action (alpha version, missing styling features)</h1>
+    <button onclick="create();">Click to add element</button>
+
+    <for loop="element in elements">
+        <div>
+            this is element: <v id="element"></v>
+        </div>
+    </for>
+    
+    <script>
+        html_insert("elements", yohRange(1));
+        elements = 1;
+        function create(){
+            elements ++;
+            html_insert("elements", yohRange(elements));
+            console.log(__html_vars__.elements);
+        }
+    </script>
+
+</body>
+
+
+
+    
+</html>
