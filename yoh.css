@@ -1,3 +1,7 @@
+:root{
+    --fade-in-time: 3s;
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -25,9 +29,9 @@
 
 .fade-in {
     font-family: Arial;
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 3s;
-    -moz-animation: fadeIn 3s;
-    -o-animation: fadeIn 3s;
-    -ms-animation: fadeIn 3s;
+    animation: fadeIn var(--fade-in-time);
+    -webkit-animation: fadeIn var(--fade-in-time);
+    -moz-animation: fadeIn var(--fade-in-time);
+    -o-animation: fadeIn var(--fade-in-time);
+    -ms-animation: fadeIn var(--fade-in-time);
 }
